@@ -1,0 +1,32 @@
+
+npm install --save @angular/material @angular/cdk
+
+npm install @angular/flex-layout --save
+
+npm install @ngrx/store @ngrx/effects @ngrx/store-devtools --save
+
+npm install @ngrx/schematics --save-dev 
+
+ng config cli.defaultCollection @ngrx/schematics
+
+One-page news application that will list recent articles from The
+Guardian’s API (open-platform.theguardian.com) and display an article selected by a user.
+You can obtain a free API key from the site or follow this link.https://bonobo.capi.gutools.co.uk/register/developer
+Your application must use Angular. You are not expected to write the set-up code therefore
+you should use the Angular CLI.
+The app should have two components, an Article Component and a List Component.
+The Article Component should display:
+• the most recent article (if no article has been selected).
+• the article selected by the user.
+
+The List Component should display an array of the most recent articles (10 will be suffi-
+cient).
+
+When a user clicks on an article in the List Component that article should be displayed
+in the Article Component.
+Your application has to provide a state management pattern in order to store your data in
+a single place. Use NgRx to accomplish this requirement.
+You should follow the general layout indicated by the wireframe in Figure 1. Styling and
+additional content you wish to include is left to you.
+The app should work on all modern browsers (Chrome, IE10, Firefox & Safari), there is no
+need to support outdated browsers.

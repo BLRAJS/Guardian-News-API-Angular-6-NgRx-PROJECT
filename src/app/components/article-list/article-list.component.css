@@ -1,0 +1,9 @@
+.article-item-link:hover {     
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.article-item-link-active {     
+    cursor: pointer;
+    text-decoration: underline;
+}

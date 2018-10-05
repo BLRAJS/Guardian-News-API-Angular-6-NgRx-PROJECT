@@ -1,0 +1,18 @@
+<mat-card>
+
+  <mat-card-header>
+    <img class="article-image" fxFlex="100" mat-card-image src="{{article?.thumbnail}}" alt="Photo">
+  </mat-card-header>
+
+  <mat-card-content>
+    <h2>{{article?.webTitle}}</h2>
+    <div fxLayout="row">
+      <i fxFlex="100">
+        <label>{{article?.byline}}</label>
+        <small fxFlexOffset="5" fxFlexAlign="end">{{article?.webPublicationDate | date: 'MM/dd/yyyy hh:mm'}}</small>
+      </i>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="article-body" innerHTML="{{article?.body}}"> </div>
+  </mat-card-content>
+</mat-card>
